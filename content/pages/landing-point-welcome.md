@@ -118,3 +118,32 @@ There’s no pressure to decide right away. Reach out when you’re ready to ask
 [Schedule a conversation](https://fantastical.app/mattlafleur/forest-city-cpa) [hello@forestcity.pro](mailto:hello@forestcity.pro)
 
 [(216) 550-4689](tel:+12165504689) Cleveland, Ohio · Remote nationwide
+
+<!-- RECOVERED: accordion answers. These panels are collapsed on the live page and their text is not in the rendered DOM; the Q/A text below is copied verbatim from the site's JS bundle (content/_source/index-C9-tk1U9.js). Order matches the questions above. -->
+
+## [Recovered accordion answers]
+
+### Do I have to switch to Forest City CPA?
+
+No. You choose whom you engage for your tax preparation. Being introduced to Forest City CPA does not by itself establish an engagement — you are welcome to ask questions and decide what is right for you.
+
+### Can you help if I only need my annual personal tax returns prepared?
+
+Yes. Annual individual and family tax preparation is welcome here, without requiring any other services. If all you need is your federal and state returns prepared and filed each year, that can be the entire relationship.
+
+### Will my fees stay the same?
+
+We won’t promise that. Forest City CPA will discuss the work your situation requires and confirm its fees before you decide whether to proceed, so you know what to expect up front.
+
+### Have my records already been transferred?
+
+We can’t make a blanket claim about that. Please contact Matt to confirm the status of your specific records and to understand any authorization that may be needed to request them.
+
+### How will I provide tax documents?
+
+We will provide clear instructions for submitting your documents through our designated secure process. We’ll walk you through it step by step when the time comes.
+
+### Can we work together remotely?
+
+Yes. We coordinate communication and document collection remotely, so you can work with us from wherever you are. You do not need to visit an office in person.
+

@@ -167,3 +167,36 @@ Schedule a conversation and we will learn about your needs, confirm the scope an
 Start with a conversation about your tax needs. If annual preparation is all you need, that is all we will do.
 
 [Book a Clarity Call](https://fantastical.app/mattlafleur/forest-city-cpa)
+
+<!-- RECOVERED: accordion answers. These panels are collapsed on the live page and their text is not in the rendered DOM; the Q/A text below is copied verbatim from the site's JS bundle (content/_source/index-C9-tk1U9.js). Order matches the questions above. -->
+
+## [Recovered accordion answers]
+
+### Do you prepare taxes for individuals who do not own a business?
+
+Yes. You do not have to own a business to work with Forest City CPA. We welcome individuals, couples, families, and retirees who simply need their annual personal income tax returns prepared and filed.
+
+### Can you help if we only need annual tax preparation?
+
+Absolutely. Annual tax preparation can be the entire relationship. There is no requirement to purchase ongoing advisory services, and additional planning can be discussed separately only when it would be useful to you.
+
+### Do you prepare federal and Ohio income tax returns?
+
+Yes. We prepare and file federal Form 1040 returns and the applicable state income tax returns, including Ohio. We also prepare Ohio municipal and school district returns when they apply to your situation.
+
+### Can you help with local or school district tax returns?
+
+Yes. When your locality or school district requires a separate return, we prepare those as part of your filing. Additional returns affect the scope and fee, which we confirm before starting.
+
+### Do I need to visit your office?
+
+No. Our standard service is virtual, using phone and video calls and our secure online portal. For clients who prefer to meet in person, a local in-office option is available at a higher rate. Contact us to discuss the options and fees.
+
+### What documents should I gather?
+
+Common items include W-2s, 1099s for retirement income, interest, dividends, and investment sales, Social Security statements, records of dependents and education expenses, and any self-employment income records. We provide a clear checklist once we confirm your scope.
+
+### How much does tax preparation cost?
+
+Fees depend on the complexity of your return and the filings required, such as state, municipal, or school district returns. Rather than publish a single number, we prefer to discuss your situation and confirm the fee before any work begins. Reach out and we will be glad to talk it through.
+
