@@ -91,14 +91,6 @@ const Footer = ({ compact = false, description = 'Financial clarity. Intelligent
             <p className="text-white/60 text-sm">
               © {currentYear} Forest City. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link to="/" className="text-white/60 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/" className="text-white/60 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

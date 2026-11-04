@@ -1,0 +1,4 @@
+/referral-rewards /cpa/referral-rewards 301
+/tax-strategy-diagnosis /cpa/tax-strategy-diagnosis 301
+/admin / 302
+/admin/* / 302

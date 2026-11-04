@@ -8,7 +8,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import FooterCTA from '../components/FooterCTA.jsx';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
-import pb from '@/lib/pocketbaseClient.js';
+import { submitForm } from '@/lib/submitForm.js';
 
 const BOOKING_URL = 'https://fantastical.app/mattlafleur/forest-city-cpa';
 
@@ -145,7 +145,7 @@ const ReviewServicesPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await pb.collection('review_inquiries').create(formData, { $autoCancel: false });
+      await submitForm('review', formData);
       toast.success('Inquiry sent.', {
         description: 'A member of our team will be in touch shortly.',
       });

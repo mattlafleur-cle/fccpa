@@ -6,7 +6,7 @@ import { Loader2 } from 'lucide-react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
-import pb from '@/lib/pocketbaseClient.js';
+import { submitForm } from '@/lib/submitForm.js';
 const ContactPage = () => {
   const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,9 +42,7 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await pb.collection('inquiries').create(formData, {
-        $autoCancel: false
-      });
+      await submitForm('contact', formData);
       toast.success('Inquiry submitted successfully.', {
         description: 'A member of our team will be in touch shortly.'
       });

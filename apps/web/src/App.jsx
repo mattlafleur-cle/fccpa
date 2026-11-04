@@ -23,16 +23,10 @@ import FAQPage from './pages/FAQPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
-// Admin Auth & Protected Routes
-import { AdminAuthProvider } from '@/context/AdminAuthContext.jsx';
-import ProtectedAdminRoute from '@/components/ProtectedAdminRoute.jsx';
-import AdminLoginPage from './pages/AdminLoginPage.jsx';
-import AdminDashboard from './pages/AdminDashboard.jsx';
 
 function App() {
   return (
     <Router>
-      <AdminAuthProvider>
         <ScrollToTop />
         <Routes>
           {/* Public Routes */}
@@ -58,14 +52,9 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
           
-          {/* Admin Routes */}
-          <Route path="/admin/login" element={<AdminLoginPage />} />
-          <Route path="/admin" element={<ProtectedAdminRoute><AdminDashboard /></ProtectedAdminRoute>} />
-          
           {/* 404 Catch-all */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-      </AdminAuthProvider>
     </Router>
   );
 }

@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import pb from '@/lib/pocketbaseClient.js';
+import { submitForm } from '@/lib/submitForm.js';
 import { trackEvent } from '@/lib/analytics.js';
 
 const BOOKING_URL = 'https://fantastical.app/mattlafleur/forest-city-cpa';
@@ -385,9 +385,7 @@ const FinancialVisibilityCheckPage = () => {
         priorities: results.priorities,
         sourcePage: 'https://forestcity.pro/cpa/financial-visibility-check',
       };
-      await pb.collection('scorecard_requests').create(payload, {
-        $autoCancel: false,
-      });
+      await submitForm('scorecard', payload);
       setEmailStatus('success');
       trackEvent('scorecard_requested', { total_score: results.totalScore });
     } catch (err) {

@@ -106,19 +106,13 @@ const TaxStrategyDiagnosis = () => {
                   Book Your Diagnosis
                 </span>
                 <p className="text-lg font-medium mb-1">Choose a time — 30 minutes</p>
-                <p className="text-[11px] opacity-50">Powered by Fantastical • Instant confirmation</p>
+                <p className="text-[11px] opacity-50">Pick a time on Matt's calendar • Instant confirmation</p>
               </div>
               <div className="p-2">
-                <iframe
-                  src={BOOKING_URL}
-                  title="Book Tax Strategy Diagnosis"
-                  loading="lazy"
-                  className="w-full h-[700px] border-0 rounded-2xl"
-                />
                 <div className="text-center py-4">
                   <a href={BOOKING_URL} target="_blank" rel="noreferrer">
                     <span className="inline-block bg-[#0F1820] text-white text-[11px] uppercase tracking-[0.18em] px-6 py-3 rounded-full hover:opacity-80 transition-opacity">
-                      Open Booking in New Tab →
+                      Choose a Time →
                     </span>
                   </a>
                   <p className="text-[10px] opacity-40 mt-3">

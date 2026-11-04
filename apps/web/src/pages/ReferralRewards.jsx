@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import FooterCTA from '../components/FooterCTA.jsx';
+import { submitForm } from '@/lib/submitForm.js';
 
 const BOOKING_URL = 'https://fantastical.app/mattlafleur/forest-city-cpa';
 
@@ -20,6 +21,8 @@ const rewards = [
 
 const ReferralRewards = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
   const [form, setForm] = useState({
     yourName: '',
     yourEmail: '',
@@ -31,11 +34,18 @@ const ReferralRewards = () => {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // eslint-disable-next-line no-console
-    console.log('Referral submission:', form);
-    setSubmitted(true);
+    setSending(true);
+    setError('');
+    try {
+      await submitForm('referral', form);
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again or email hello@forestcity.pro.');
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
@@ -197,11 +207,13 @@ const ReferralRewards = () => {
                     className={inputClass}
                   />
                 </div>
+                {error && <p className="text-sm text-red-700" role="alert">{error}</p>}
                 <button
                   type="submit"
-                  className="w-full bg-[#0F1820] text-white text-[11px] uppercase tracking-[0.18em] py-4 rounded-full hover:opacity-80 transition-opacity"
+                  disabled={sending}
+                  className="w-full bg-[#0F1820] text-white text-[11px] uppercase tracking-[0.18em] py-4 rounded-full hover:opacity-80 transition-opacity disabled:opacity-50"
                 >
-                  Submit Referral →
+                  {sending ? 'Sending…' : 'Submit Referral →'}
                 </button>
                 <p className="text-[10px] text-[#0F1820]/40 text-center">
                   Reward issued after first paid engagement.
